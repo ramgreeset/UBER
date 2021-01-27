@@ -1,0 +1,94 @@
+.app {
+	background: url('../images/bg/app.jpg') center center/cover no-repeat;
+	padding: 48px 0 60px 0;
+
+	span {
+		padding: 7px 11px;
+		background-color: #000;
+		color: #fff;
+	}
+
+	&_reasons_card {
+		padding-top: 92px;
+		margin: 0 auto;
+		width: 320px;
+		height: 280px;
+		margin-bottom: 19px;
+		position: relative;
+
+		&_text {
+			text-align: center;
+			color: #ffffff;
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		&_1 {
+			background: url('../images/cards/img1.jpg') center center/cover no-repeat;
+		}
+
+		&_2 {
+			background: url('../images/cards/img3.jpg') center center/cover no-repeat;
+		}
+
+		&_3 {
+			background: url('../images/cards/img5.jpg') center center/cover no-repeat;
+		}
+
+		&_4 {
+			background: url('../images/cards/img2.jpg') center center/cover no-repeat;
+		}
+
+		&_5 {
+			background: url('../images/cards/img4.jpg') center center/cover no-repeat;
+		}
+
+		&_6 {
+			background: url('../images/cards/img6.jpg') center center/cover no-repeat;
+		}
+
+		.plus {
+			border-radius: 100%;
+			background-color: #000;
+			height: 26px;
+			width: 26px;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			bottom: 35px;
+			left: 50%;
+			transform: translateX(-50%);
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				display: circle;
+				width: 14px;
+				height: 2px;
+				background-color: $main-color;
+			}
+
+			&:after {
+				content: '';
+				display: circle;
+				width: 2px;
+				height: 14px;
+				position: absolute;
+				background-color: $main-color;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			&:hover {
+
+				&:before,
+				&:after {
+					background-color: $second-color;
+				}
+			}
+
+		}
+	}
+}

@@ -1,6 +1,5 @@
 @media (max-width: 1200px){
 
-	
 	.nav{
 		&_item{
 			padding-right: 25px;
@@ -32,19 +31,11 @@
 		}
 	}
 }
-
-
 @media (max-width: 991px){
 	.title{
 		font-size: 37px;
 	}
 
-	.nav{
-		&_item{
-			padding-right: 10px;
-			font-size: 12px;
-		}
-	}
 	.header{
 		&_lower_official{
 			font-size: 12px;
@@ -53,6 +44,12 @@
 			width: 100%;
 			height: 40px;
 			font-size: 12px;
+		}
+		.nav{
+			&_item{
+				padding-right: 10px;
+				font-size: 12px;
+			}
 		}
 	}
 	.promo{
@@ -78,7 +75,6 @@
 			}
 		}
 	}
-	}
 	.auto{
 		height: 764px;
 
@@ -102,18 +98,17 @@
 			&_icon{
 				margin-bottom: 5px;
 			}
+		}
 		.icons-circle{
-				width: 25px;
-				height: 25px;
-				i{
-					font-size: 13px;
-				}
+			width: 25px;
+			height: 25px;
+			i{
+				font-size: 13px;
 			}
 		}
-	
+
 }
-
-
+}
 @media (max-width: 767px){
 	.nav{
 		height: 40px;

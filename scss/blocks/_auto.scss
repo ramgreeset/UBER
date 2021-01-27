@@ -1,0 +1,47 @@
+.auto {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	height: 897px;
+	padding-top: 65px;
+	background: url('../images/bg/auto.jpg') center center/cover no-repeat;
+
+	span {
+		padding: 7px 11px;
+		background-color: #fff;
+		color: #000;
+	}
+
+	.evryday {
+		color: #222222;
+		font-size: 17px;
+		font-weight: 300;
+
+
+	}
+
+	&__car-text {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 25px);
+	}
+
+	&__car-title {
+		font-size: 38px;
+		margin-bottom: 15px;
+
+
+	}
+
+	&__car-subtitle {
+		text-transform: uppercase;
+		color: #000;
+		font-size: 17px;
+		letter-spacing: -0.5px;
+	}
+
+}

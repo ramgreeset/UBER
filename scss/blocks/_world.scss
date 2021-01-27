@@ -1,0 +1,33 @@
+.world {
+	background: url('../images/bg/bg_world.png') center center/cover no-repeat;
+	height: 717px;
+	padding: 55px 0;
+	position: relative;
+
+	span {
+		color: #fff;
+	}
+
+	.advantages {
+		span {
+			padding: 7px 11px;
+			background-color: #fff;
+			color: #000;
+
+		}
+
+	}
+
+	&_link {
+		font-size: 15px;
+		font-weight: 400;
+		text-align: center;
+		color: #1fbad6;
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 49px;
+		transform: translateX(-50%);
+		left: 50%;
+
+	}
+}

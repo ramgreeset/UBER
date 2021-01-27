@@ -1,0 +1,61 @@
+.reasons {
+	padding-top: 79px;
+	padding-bottom: 68px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	span {
+		padding: 7px 11px;
+		background-color: #000;
+		color: #fff;
+	}
+
+	&_wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+
+	&_card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 35px;
+		line-height: 21px;
+
+		&_circle {
+			min-width: 113px;
+			min-height: 113px;
+			background: $main-color;
+			margin-right: 26px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 100%;
+
+		}
+
+		&_inner {
+			width: 341px;
+		}
+
+		&_text {
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 18px;
+		}
+
+		&_title {
+			color: $main-color;
+			font-size: 17px;
+			font-weight: 400;
+
+		}
+
+
+
+	}
+}

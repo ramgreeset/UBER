@@ -1,0 +1,102 @@
+.header {
+	position: relative;
+}
+
+.nav {
+	background-color: #212121;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+			outline: none;
+			color: $ne-main-color;
+		}
+	}
+
+	&_list {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&_item {
+		border-right: 2px dotted rgba(0, 0, 0, 0.219);
+		padding-right: 38px;
+		font-size: 15px;
+		font-weight: 300;
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+.header_lower {
+	height: 84px;
+	background-color: rgba(0, 0, 0, .6);
+	padding-top: 22px;
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	color: #ffffff;
+	z-index: 1;
+
+	.logo {
+		max-width: 100%;
+		margin-bottom: 6px;
+	}
+
+	&_official {
+		opacity: 0.5;
+		font-size: 13px;
+		font-weight: 100;
+	}
+
+	&_call {
+		font-size: 12px;
+		font-weight: 300;
+		text-align: right;
+		margin-bottom: 8px;
+	}
+
+	&_phone {
+		display: block;
+		font-size: 22px;
+		text-transform: uppercase;
+		text-align: right;
+		color: #fff;
+
+	}
+
+	&_btn {
+		width: 172px;
+		height: 46px;
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+		border: 2px solid rgba(0, 0, 0, 0.4);
+		background-image: linear-gradient(to top, $main-color 0%, $main-color 100%);
+		border-radius: 3px;
+
+
+	}
+
+	&_btn:hover {
+		width: 172px;
+		height: 46px;
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+		border: 2px solid rgba(0, 0, 0, 0.4);
+		background-image: linear-gradient(to top, $ne-main-color 0%, $ne-main-color 100%);
+		transition: 0.5s;
+	}
+}
+
+.hamburger {
+	display: none;
+}
