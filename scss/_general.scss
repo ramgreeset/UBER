@@ -1,3 +1,4 @@
+
 li {
 	list-style: none;
 }
@@ -148,7 +149,7 @@ button {
 
 
 .promo {
-	background: url('../img/background.jpg') center center / cover no-repeat;
+	background: url('../images/bg/background.jpg') center center / cover no-repeat;
 	height: 799px;
 	text-align: center;
 	color: #fff;
@@ -264,12 +265,8 @@ button {
 	}
 }
 
-
-
-
-
 .app {
-	background: url(../img/Rectangle_20.png) center center/cover no-repeat;
+	background: url('../images/Rectangle_20.png') center center/cover no-repeat;
 	padding: 48px 0 60px 0;
 
 	span {
@@ -295,27 +292,27 @@ button {
 		}
 
 		&_1 {
-			background: url('../img/img1.jpg') center center/cover no-repeat;
+			background: url('../images/img1.jpg') center center/cover no-repeat;
 		}
 
 		&_2 {
-			background: url('../img/img3.jpg') center center/cover no-repeat;
+			background: url('../images/img3.jpg') center center/cover no-repeat;
 		}
 
 		&_3 {
-			background: url('../img/img5.jpg') center center/cover no-repeat;
+			background: url('../images/img5.jpg') center center/cover no-repeat;
 		}
 
 		&_4 {
-			background: url('../img/img2.jpg') center center/cover no-repeat;
+			background: url('../images/img2.jpg') center center/cover no-repeat;
 		}
 
 		&_5 {
-			background: url('../img/img4.jpg') center center/cover no-repeat;
+			background: url('../images/img4.jpg') center center/cover no-repeat;
 		}
 
 		&_6 {
-			background: url('../img/img6.jpg') center center/cover no-repeat;
+			background: url('../images/img6.jpg') center center/cover no-repeat;
 		}
 
 		.plus {
@@ -373,7 +370,7 @@ button {
 	color: #fff;
 	height: 897px;
 	padding-top: 65px;
-	background: url('../img/auto.jpg') center center/cover no-repeat;
+	background: url('../images/auto.jpg') center center/cover no-repeat;
 
 	span {
 		padding: 7px 11px;
@@ -457,7 +454,7 @@ button {
 				display: circle;
 				width: 21px;
 				height: 20px;
-				background: url('../img/blue.png') center center / cover no-repeat;
+				background: url('../images/blue.png') center center / cover no-repeat;
 				position: absolute;
 				transform: translate(-35px, -1px);
 
@@ -473,7 +470,7 @@ button {
 				display: circle;
 				width: 21px;
 				height: 20px;
-				background: url('../img/red.png') center center / cover no-repeat;
+				background: url('../images/red.png') center center / cover no-repeat;
 				position: absolute;
 				transform: translate(-35px, -1px);
 
@@ -491,7 +488,7 @@ button {
 }
 
 .world {
-	background: url('../img/bg_world.png') center center/cover no-repeat;
+	background: url('../images/bg_world.png') center center/cover no-repeat;
 	height: 717px;
 	padding: 55px 0;
 	position: relative;
