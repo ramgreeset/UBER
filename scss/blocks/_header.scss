@@ -36,28 +36,9 @@
 			text-align: right;
 			color: #fff;
 		}
-
-		&__btn {
-			width: 172px;
-			height: 46px;
-			box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
-			border: 2px solid rgba(0, 0, 0, 0.4);
-			background-image: linear-gradient(to top, $main-color 0%, $main-color 100%);
-			border-radius: 3px;
-			&:hover {
-				width: 172px;
-				height: 46px;
-				box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
-				border: 2px solid rgba(0, 0, 0, 0.4);
-				background-image: linear-gradient(to top, $ne-main-color 0%, $ne-main-color 100%);
-				transition: 0.5s;
-			}
-		}
-
 	}
-
-
 }
+
 
 
 
