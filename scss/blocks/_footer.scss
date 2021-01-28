@@ -19,10 +19,12 @@
 			background-color: #000;
 			border-radius: 100%;
 			margin-right: 7px;
+			transition: 0.3s;
 
 			&:hover {
 				transform: scale(1.1);
-				transition: 0.1s
+				color: $ne-main-color;
+				transition: 0.3s;
 			}
 
 		}
