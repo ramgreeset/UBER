@@ -1,75 +1,61 @@
 .require {
-	padding: 76px 0 20px 0;
-
+	padding: 76px 0 40px 0;
 
 	span {
-		padding: 7px 11px;
 		background-color: #000;
 		color: #fff;
 	}
 
-	&_circle {
-		margin-bottom: 60px;
+	&__wrapper {
+		margin: 40px 33px 0;
+		&_red{
+			margin-top: 50px;
+		}
 	}
 
-
-
-	&_circle-title {
-		margin: 9px;
-		color: #1ca8c3;
+	&__list-title {
+		color: $main-color;
 		font-size: 22px;
 		font-weight: 400;
 
-	}
-
-	.red {
-		color: $second-color;
-	}
-
-	&_list {
-		font-family: "Roboto Light";
-		margin: 15px;
-		padding-left: 50px;
-
-		li {
-			position: relative;
-			margin-bottom: 10px;
-			font-size: 17px;
-			font-weight: 300;
-
-			&:before {
-				content: '';
-				display: circle;
-				width: 21px;
-				height: 20px;
-				background: url('../images/blue.png') center center / cover no-repeat;
-				position: absolute;
-				transform: translate(-35px, -1px);
-
-			}
+		&_red {
+			color: $red-color;
 		}
-
 	}
 
-	.list_red {
-		li {
+	&__list {
+		padding: 20px 0 0 55px;
+	}
+
+	&__item {
+		line-height: 24px;
+		position: relative;
+		margin-bottom: 10px;
+		font-size: 17px;
+		font-weight: 300;
+
+		&:before {
+			content: '';
+			display: circle;
+			width: 21px;
+			height: 20px;
+			background: url('../images/blue.png') center center / cover no-repeat;
+			position: absolute;
+			transform: translate(-32px, 3px);
+		}
+		&_red {
 			&:before {
-				content: '';
-				display: circle;
-				width: 21px;
-				height: 20px;
 				background: url('../images/red.png') center center / cover no-repeat;
-				position: absolute;
-				transform: translate(-35px, -1px);
 
 			}
 		}
 	}
 
 
-	&_descr {
-		color: #1ca8c3;
-		font-weight: 400;
+	&__descr {
+		padding-top: 20px;
+		color: $main-color;
+		font-weight: 300;
 	}
 
 

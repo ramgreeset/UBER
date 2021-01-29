@@ -1,17 +1,13 @@
 .reasons {
-	padding-top: 79px;
-	padding-bottom: 68px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	font-size: 17px;
+	padding: 79px 0 68px 0;
 
 	span {
-		padding: 7px 11px;
 		background-color: #000;
 		color: #fff;
 	}
 
-	&_wrapper {
+	&__wrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -19,43 +15,36 @@
 	}
 
 
-	&_card {
+	&__card {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-top: 35px;
 		line-height: 21px;
 
-		&_circle {
-			min-width: 113px;
-			min-height: 113px;
+		&-circle {
+			width: 113px;
+			height: 113px;
 			background: $main-color;
 			margin-right: 26px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			border-radius: 100%;
-
 		}
 
-		&_inner {
+		&-inner {
 			width: 341px;
 		}
 
-		&_text {
-			font-size: 15px;
-			font-weight: 300;
-			line-height: 18px;
-		}
-
-		&_title {
+		&-title {
 			color: $main-color;
-			font-size: 17px;
 			font-weight: 400;
-
 		}
 
-
+		&-text {
+			font-weight: 300;
+		}
 
 	}
 }

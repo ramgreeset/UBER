@@ -3,26 +3,17 @@
 	padding: 48px 0 60px 0;
 
 	span {
-		padding: 7px 11px;
 		background-color: #000;
 		color: #fff;
 	}
 
-	&_reasons_card {
+	&__card {
 		padding-top: 92px;
 		margin: 0 auto;
 		width: 320px;
 		height: 280px;
 		margin-bottom: 19px;
 		position: relative;
-
-		&_text {
-			text-align: center;
-			color: #ffffff;
-			font-size: 24px;
-			font-weight: 400;
-			text-transform: uppercase;
-		}
 
 		&_1 {
 			background: url('../images/cards/img1.jpg') center center/cover no-repeat;
@@ -48,47 +39,56 @@
 			background: url('../images/cards/img6.jpg') center center/cover no-repeat;
 		}
 
-		.plus {
-			border-radius: 100%;
-			background-color: #000;
-			height: 26px;
-			width: 26px;
+	}
+
+	&__text {
+		text-align: center;
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		line-height: 1.2;
+	}
+
+	&__plus {
+		border-radius: 100%;
+		background-color: #000;
+		height: 26px;
+		width: 26px;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: 35px;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: circle;
+			width: 14px;
+			height: 2px;
+			background-color: $main-color;
+		}
+
+		&:after {
+			content: '';
+			display: circle;
+			width: 2px;
+			height: 14px;
 			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			bottom: 35px;
+			background-color: $main-color;
 			left: 50%;
 			transform: translateX(-50%);
-			cursor: pointer;
-
-			&:before {
-				content: '';
-				display: circle;
-				width: 14px;
-				height: 2px;
-				background-color: $main-color;
-			}
-
-			&:after {
-				content: '';
-				display: circle;
-				width: 2px;
-				height: 14px;
-				position: absolute;
-				background-color: $main-color;
-				left: 50%;
-				transform: translateX(-50%);
-			}
-
-			&:hover {
-
-				&:before,
-				&:after {
-					background-color: $second-color;
-				}
-			}
-
 		}
+
+		&:hover {
+			&:before,
+			&:after {
+				background-color: $red-color;
+			}
+		}
+
 	}
 }

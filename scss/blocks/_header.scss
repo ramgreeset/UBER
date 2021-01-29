@@ -51,27 +51,26 @@
 	z-index: 2;
 	width: 100%;
 
-	a {
+	&__link {
 		color: #fff;
 
 		&:hover {
 			text-decoration: none;
-			outline: none;
 			color: $ne-main-color;
 		}
 	}
 
 	&__list {
-		margin: 0;
 		display: flex;
 		justify-content: space-between;
 	}
 
 	&__item {
-		border-right: 2px dotted rgba(0, 0, 0, 0.219);
+		border-right: 2px dotted rgb(0, 0, 0);
 		padding-right: 38px;
 		font-size: 15px;
 		font-weight: 300;
+		line-height: 1.5;
 
 		&:last-child {
 			border-right: none;

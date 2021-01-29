@@ -3,22 +3,21 @@
 	height: 717px;
 	padding: 55px 0;
 	position: relative;
+	
+	.advantages {
+		span {
+			background-color: #fff;
+			color: #000;
+
+		}
+	}
 
 	span {
 		color: #fff;
 	}
 
-	.advantages {
-		span {
-			padding: 7px 11px;
-			background-color: #fff;
-			color: #000;
 
-		}
-
-	}
-
-	&_link {
+	&__link {
 		font-size: 15px;
 		font-weight: 400;
 		text-align: center;
@@ -28,6 +27,5 @@
 		bottom: 49px;
 		transform: translateX(-50%);
 		left: 50%;
-
 	}
 }
