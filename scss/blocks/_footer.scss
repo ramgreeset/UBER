@@ -6,77 +6,91 @@
 	height: 150px;
 	padding: 0 20px;
 
-	&_social-icons {
+	&__nav-wrapper {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 		display: flex;
-
-		.icons-circle {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: #fff;
-			height: 32px;
-			width: 32px;
-			background-color: #000;
-			border-radius: 100%;
-			margin-right: 7px;
-			transition: 0.3s;
-
-			&:hover {
-				transform: scale(1.1);
-				color: $ne-main-color;
-				transition: 0.3s;
-			}
-
-		}
-
+		flex-direction: column;
+		align-items: center;
 	}
 
-	&_nav-list {
-		display: flex;
-		justify-content: space-between;
+	&__nav-list {
 		font-size: 15px;
 		font-weight: 300;
 		text-transform: uppercase;
-
-	}
-
-	&_nav-link {
 		color: #070716;
-	}
-
-	&_aside-list {
+		width: 400px;
+		margin-bottom: 10px;
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.aside-link {
-		padding: 10px;
+	&__language {
+		color: $main-color;
+	}
+}
+
+.additionally {
+	width: 420px;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+
+	&__link {
 		color: #999999;
 		font-size: 11px;
 		font-weight: 300;
 		font-style: normal;
 		text-transform: uppercase;
 	}
+}
 
-	&_nav-wrapper {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+.social-icons {
+	display: flex;
 
-	&_language {
+	&-circle {
 		display: flex;
+		align-items: center;
 		justify-content: center;
-	}
-
-	.store_icon {
-		padding: 0 3px;
+		color: #fff;
+		height: 32px;
+		width: 32px;
+		background-color: #000;
+		border-radius: 100%;
+		margin-right: 7px;
+		transition: 0.3s;
 
 		&:hover {
 			transform: scale(1.1);
-			transition: 0.1s
+			color: $ne-main-color;
+			transition: 0.3s;
 		}
 	}
+}
 
+.store-icon {
+	padding: 0 3px;
 
+	&:hover {
+		transform: scale(1.1);
+		transition: 0.1s
+	}
+}
+
+.blue-line {
+	&:before {
+		content: '';
+		position: absolute;
+		width: 300px;
+		height: 5px;
+		background-color: $main-color;
+		top: -30px;
+		left: 50%;
+		transform: translateX(-50%);
+
+	}
 }
