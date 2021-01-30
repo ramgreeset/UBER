@@ -11,8 +11,17 @@
 		color: #ffffff;
 		z-index: 1;
 
-		&__logo {
-			max-width: 100%;
+		&__wrapper{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__logo{
+			margin-left: 15px;
+		}
+		&__logo-link{
+			display: block;
 			margin-bottom: 6px;
 		}
 
@@ -25,20 +34,28 @@
 		&__call {
 			font-size: 12px;
 			font-weight: 300;
-			text-align: right;
 			margin-bottom: 8px;
+			text-align: right;
 		}
 
 		&__phone {
 			display: block;
 			font-size: 22px;
 			text-transform: uppercase;
-			text-align: right;
 			color: #fff;
 		}
 	}
 }
 
+.call{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 30px;
+	&__wrapper{
+		display: flex;
+	}
+}
 
 
 
