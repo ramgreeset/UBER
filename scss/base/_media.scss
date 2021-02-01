@@ -13,10 +13,6 @@
 		}
 	}
 
-	.app__card {
-		width: 300px;
-	}
-
 	.store-icon {
 		display: flex;
 		margin-bottom: 7px;
@@ -36,6 +32,14 @@
 		img {
 			width: 100%;
 		}
+	}
+
+
+
+	.menu__item {
+		padding-right: 8px;
+		font-size: 13px;
+		font-weight: 400;
 	}
 
 	.header-bottom {
@@ -95,14 +99,83 @@
 }
 
 @media (max-width: 767px) {
+	.header-bottom {
+		height: 98px;
+	}
+
+
+	.container {
+		max-width: 700px;
+	}
+
+	.call__wrapper{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header-bottom__call{
+		display: none;
+	}
+
+	.header-bottom__phone{
+		margin-bottom: 10px;
+	}
+
+
+	.menu__item {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 28px;
+
+		span {
+			display: block;
+			height: 3px;
+			width: 100%;
+			background-color: #fff;
+			margin-bottom: 6px;
+		}
+		&_active{
+			
+		}
+	}
+
+	.promo__subtitle {
+		font-size: 28px;
+	}
+
+	.footer__nav-wrapper {
+		position: static;
+		left: auto;
+		transform: none;
+		order: -1;
+		padding: 20px 0 20px 0;
+	}
+
+	.store-icon {
+		display: inline-block;
+
+	}
+
+	.social-icons {
+		margin-bottom: 20px;
+	}
+
 	.reasons__card {
 		display: flex;
 		flex-direction: row;
 	}
 
 	.app__card {
-		width: 240px;
-		height: 240px;
+		width: 260px;
+		height: 220px;
 	}
 
 	.app__text {
@@ -127,9 +200,7 @@
 		flex-direction: column;
 
 	}
-	.store-icon {
-		display: inline-block;
-	}
+
 
 }
 

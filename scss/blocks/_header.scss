@@ -2,9 +2,10 @@
 	position: relative;
 
 	&-bottom {
+		display: flex;
+		align-items: center;
 		height: 84px;
 		background-color: rgba(0, 0, 0, .6);
-		padding-top: 22px;
 		position: absolute;
 		width: 100%;
 		top: 50px;

@@ -7,13 +7,20 @@
 		color: #fff;
 	}
 
+	.app__wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
 	&__card {
 		padding-top: 92px;
-		margin: 0 auto;
 		width: 320px;
 		height: 280px;
 		margin-bottom: 19px;
+		margin-right: 10px;
 		position: relative;
+
 
 		&_1 {
 			background: url('../images/cards/img1.jpg') center center/cover no-repeat;
