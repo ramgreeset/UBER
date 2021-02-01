@@ -99,6 +99,37 @@
 }
 
 @media (max-width: 767px) {
+	.menu {
+		&__list {
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 50%;
+			height: 100vh;
+			flex-direction: column;
+			background-color: rgba(0, 0, 0, 0.637);
+			align-items: center;
+			justify-content: center;
+			transition: 0.5s all;
+
+			&_active {
+				left: 0;
+			}
+		}
+
+
+		&__item {
+			padding-right: 0;
+			border: 0;
+			margin-bottom: 25px;
+		}
+
+		&__link {
+			font-size: 20px;
+		}
+	}
+
+
 	.header-bottom {
 		height: 98px;
 	}
@@ -108,23 +139,18 @@
 		max-width: 700px;
 	}
 
-	.call__wrapper{
+	.call__wrapper {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.header-bottom__call{
+	.header-bottom__call {
 		display: none;
 	}
 
-	.header-bottom__phone{
+	.header-bottom__phone {
 		margin-bottom: 10px;
-	}
-
-
-	.menu__item {
-		display: none;
 	}
 
 	.hamburger {
@@ -141,9 +167,29 @@
 			width: 100%;
 			background-color: #fff;
 			margin-bottom: 6px;
+			transition: 0.5s all;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
-		&_active{
-			
+
+		&_active {
+			span {
+				margin-bottom: -3px;
+
+				&:nth-child(1) {
+					transform: translateY(3px) rotate(-45deg);
+				}
+
+				&:nth-child(2) {
+					display: none;
+				}
+
+				&:nth-child(3) {
+					transform: translateY(3px) rotate(45deg);
+				}
+			}
 		}
 	}
 
@@ -192,7 +238,7 @@
 	}
 
 	.auto {
-		height: 780px;
+		height: 820px;
 	}
 
 	.footer {
@@ -202,6 +248,61 @@
 	}
 
 
+
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+	.promo__title {
+		line-height: 50px;
+	}
+
+	.promo__subtitle {
+		font-size: 20px;
+	}
+
+	.header-bottom {
+		height: 74px;
+	}
+
+	.header-bottom__official {
+		display: none;
+	}
+
+	.header-bottom__phone {
+		font-size: 16px;
+	}
+	.promo {
+		height: 400px;
+
+	}
+
+	.reasons__card {
+		flex-direction: column;
+	}
+
+	.logo {
+		width: 130px;
+	}
+
+	.header-bottom__phone {
+		margin-bottom: 3px;
+	}
+
+	.button_header {
+		width: 154px;
+		height: 29px;
+	}
+
+	.promo__descr {
+		display: none;
+	}
+
+	.promo__title {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.promo__subtitle {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}

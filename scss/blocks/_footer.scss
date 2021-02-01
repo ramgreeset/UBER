@@ -20,10 +20,14 @@
 		font-weight: 300;
 		text-transform: uppercase;
 		color: #070716;
-		width: 400px;
+		max-width: 400px;
 		margin-bottom: 10px;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	&__nav-link{
+		padding:0 10px;
 	}
 
 	&__language {
@@ -32,7 +36,7 @@
 }
 
 .additionally {
-	width: 420px;
+	max-width: 420px;
 
 	&__list {
 		display: flex;
@@ -41,6 +45,7 @@
 	}
 
 	&__link {
+		padding:0 10px;
 		color: #999999;
 		font-size: 11px;
 		font-weight: 300;
