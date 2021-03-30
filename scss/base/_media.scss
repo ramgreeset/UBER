@@ -94,7 +94,7 @@
 	.social-icons-circle {
 		height: 27px;
 		width: 27px;
-		margin-right: 5px;
+		margin-right: 10px;
 	}
 }
 
@@ -284,7 +284,7 @@
 	}
 
 	.logo {
-		width: 130px;
+		width: 190px;
 	}
 
 	.header-bottom__phone {
@@ -307,5 +307,28 @@
 	.promo__subtitle {
 		font-size: 20px;
 		line-height: 25px;
+	}
+	.auto {
+		height: 748px;
+	}
+	.auto__car-text {
+		transform: translate(-50%, 18px);
+	}
+	.auto__car-title {
+		font-size: 27px;
+		margin-bottom: 3px;
+	}
+	.auto__car-subtitle{
+		font-size: 11px;
+	}
+	.menu__list {
+		width: 75%;
+	}
+
+}
+
+@media (max-width: 350px){
+	.store{
+		width: 315px;
 	}
 }
