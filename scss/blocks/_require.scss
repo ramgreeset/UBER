@@ -15,7 +15,7 @@
 
 	&__list-title {
 		color: $main-color;
-		font-size: 22px;
+		@include adaptiv-font (22, 15)
 		font-weight: 400;
 
 		&_red {

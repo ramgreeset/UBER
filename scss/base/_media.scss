@@ -74,10 +74,6 @@
 			font-size: 15px;
 			font-weight: 300;
 		}
-
-		&__list-title {
-			font-size: 19px;
-		}
 	}
 
 	.reasons__card {
@@ -126,7 +122,7 @@
 		}
 
 		&__link {
-			display:block;
+			display: block;
 			font-size: 20px;
 			width: 100%;
 		}
@@ -231,9 +227,6 @@
 		font-size: 18px;
 	}
 
-	.title {
-		font-size: 35px;
-	}
 
 	.auto__car-title {
 		font-size: 38px;
@@ -274,6 +267,7 @@
 	.header-bottom__phone {
 		font-size: 16px;
 	}
+
 	.promo {
 		height: 400px;
 
@@ -304,31 +298,75 @@
 		font-size: 30px;
 		line-height: 35px;
 	}
+
 	.promo__subtitle {
 		font-size: 20px;
 		line-height: 25px;
 	}
+
 	.auto {
 		height: 748px;
 	}
+
 	.auto__car-text {
 		transform: translate(-50%, 18px);
 	}
+
 	.auto__car-title {
 		font-size: 27px;
 		margin-bottom: 3px;
 	}
-	.auto__car-subtitle{
+
+	.auto__car-subtitle {
 		font-size: 11px;
 	}
+
 	.menu__list {
 		width: 75%;
 	}
 
 }
 
-@media (max-width: 350px){
+@media (max-width: 350px) {
+	.logo {
+		width: 157px;
+	}
+	.button_header {
+		width: 125px;
+		font-size: 10px;
+	}
 	.store{
 		width: 315px;
+	}
+	.world {
+		height: 510px;
+	}
+
+	.additionally__list {
+		min-width: 315px;
+		flex-wrap: wrap;
+	}
+
+	.additionally__item {
+		margin-bottom: 7px;
+	}
+	.footer__nav-link {
+		padding: 0px 9px;
+		font-size: 13px;
+	}
+	.auto {
+		height: 617px;
+	}
+	.auto__car-text {
+		transform: translate(-50%, 5px);
+	}
+	.reasons__card-inner{
+			width: 290px;
+	}
+	.reasons__card-title{
+		margin-bottom: 10px;
+	}
+	.require__list {
+		padding: 20px 0 0 36px;
 	}
 }
